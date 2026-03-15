@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT@posts - Crie suas postagens</title>
+    <meta name="description" content="Simulação de criação de posts com integração de API aberta.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">IT@posts</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post-creation">
+            <div class="card">
+                <h1>Criar Postagem de blog</h1>
+                <form id="formulario-post">
+                    <div class="input-group">
+                        <label for="titulo">Título do Post</label>
+                        <input type="text" id="titulo" placeholder="Escreva seu título aqui..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="conteudo">Conteúdo</label>
+                        <textarea id="conteudo" rows="4" placeholder="Escreva seu conteúdo aqui..." required></textarea>
+                    </div>
+                    <button type="submit" id="botao-postar">Postar Agora</button>
+                    <!-- Exemplo de acessibilidade solicitado: input tipo image (opcional mas bom incluir no footer ou como alternativa) -->
+                </form>
+            </div>
+        </section>
+
+        <section class="post-preview">
+            <div class="card">
+                <h2>Postagem de blog</h2>
+                <article id="container-renderizacao">
+                    <h3 id="renderizador-titulo" class="placeholder-text">Seu título aparecerá aqui...</h3>
+                    <p id="renderizador-conteudo" class="placeholder-text">Seu conteúdo aparecerá aqui após a postagem.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 IT@posts- Desenvolvido com JavaScript</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
